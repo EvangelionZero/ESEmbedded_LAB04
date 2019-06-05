@@ -25,8 +25,8 @@
 #define GPIO_BASE(port) (0x40020000 + 0x400 * (port))
 
 #define GPIOx_MODER_OFFSET 0x00
-#define MODERy_1_BIT(y) ((y)*2 + 1)
-#define MODERy_0_BIT(y) ((y)*2)
+#define MODERy_1_BIT(y) ((y)*2 + 1) //低位
+#define MODERy_0_BIT(y) ((y)*2) //高位  （y）是個好寫法
 
 #define GPIOx_OTYPER_OFFSET 0x04
 #define OTy_BIT(y) (y)
